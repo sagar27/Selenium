@@ -22,7 +22,7 @@ public class FindAllBrokenLinks {
 		
 		SoftAssert a = new SoftAssert();
 		
-		// find all the broken elements in the footer section
+		// find all the broken elements in the footer section.
 		
 		List<WebElement> urls= driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 		for( WebElement eachURL: urls)
