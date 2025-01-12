@@ -14,6 +14,9 @@ public class SortWebTablesAndCompare {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		//pagination scenario using streams and do-while loop
+		
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
@@ -30,7 +33,6 @@ public class SortWebTablesAndCompare {
 		
 		tablewebelements.stream().filter(s->s.getText().contains("Beans")).map(s->getPrice(s))
 				.collect(Collectors.toList()).forEach(s->System.out.println("Price is : "+s));
-		
 		
 		System.out.println("PASS");
 		driver.quit();
