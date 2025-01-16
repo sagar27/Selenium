@@ -9,7 +9,7 @@ import static org.openqa.selenium.support.locators.RelativeLocator.*;
 public class RelativeLocators {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
